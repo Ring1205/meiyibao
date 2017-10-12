@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">美易宝</string>
+    <string name="netErr">网络异常</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">加载中...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="cube_views_load_more_loading">加载中...</string>
+    <string name="cube_views_load_more_click_to_load_more">加载更多</string>
+    <string name="cube_views_load_more_loaded_no_more">无更多数据</string>
+    <string name="cube_views_load_more_loaded_empty">数据为空</string>
+    <string name="cube_views_load_more_error">加载失败</string>
+    <!-- 版本更新 -->
+    <string name="load_start">开始下载</string>
+    <string name="loading">正在下载</string>
+    <string name="load_success">下载成功，点击安装</string>
+    <string name="load_failure">下载失败</string>
+    <string name="lack_of_space">空间不足</string>
+    <string name="apk_removed">安装包被移除，请重新下载</string>
+    <string name="upgrade">版本更新</string>
+    <string name="update">更新</string>
+    <string name="update_new_info">您使用的已经是最新版本！</string>
+    <string name="now_upgrade_title">现在升级</string>
+    <string name="next_upgrade_title">下次升级</string>
+    <string name="exit_title">退出</string>
+    <string name="is_sure">操作尚未完成，您确定放弃？</string>
+    <string name="sure">确  定</string>
+    <string name="cancel">取  消</string>
+    <string name="scan_error">扫描失败</string>
+    <string name="open_url">您将要打开网址：</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="2dp"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+        android:padding="2dp"
+        android:background="@drawable/pic_bg"
+        android:focusable="false"
+        android:id="@+id/iv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#0000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/member_little_01" />
+
+    <ImageView
+        android:id="@+id/iv_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/iv_item"
+        android:layout_alignTop="@+id/iv_item"
+        android:src="@drawable/tem_vip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/text_3a_14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_item"
+        android:layout_below="@+id/iv_item"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:text="白色情人节"
+        android:visibility="gone" />
+
+</RelativeLayout>

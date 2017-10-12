@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_dian"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="30dp"
+        android:src="@drawable/dian" />
+
+    <ImageView
+        android:id="@+id/iv_set_text_item"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/iv_down_text"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="80dp"
+        android:src="@drawable/download_text" />
+
+    <TextView
+        android:id="@+id/tv_set_down_text"
+        android:paddingRight="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="12dp"
+        android:text="1.58M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/view_thick_line"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

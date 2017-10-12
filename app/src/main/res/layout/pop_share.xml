@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/sendmail_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/weeLine"
+        android:gravity="center"
+        android:text="发送邮件" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+    <TextView
+        android:id="@+id/sendwxfriend_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/weeLine"
+        android:gravity="center"
+        android:text="微信好友" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+    <TextView
+        android:id="@+id/sendwx_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/weeLine"
+        android:gravity="center"
+        android:text="微信朋友圈" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/cancle_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/weeLine"
+        android:gravity="center"
+        android:text="取消" />
+</LinearLayout>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    >
+
+    <com.wmcd.myb.view.MyScrollview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/no_photo">
+
+            <ImageView
+
+                android:id="@+id/iv_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scaleType="fitStart"
+                android:src="@drawable/center_bg_beta" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="个人中心"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/iv_set"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/set"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:src="@drawable/information_bg"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/head_back"
+                 />
+
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:id="@+id/ll_name_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_head"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_vip_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="14dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tv_name"
+                    android:src="@drawable/member_icon" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="金丝熊"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_not_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_name_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp">
+
+                <ImageView
+                    android:id="@+id/iv_no_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_alignLeft="@+id/tv_name"
+                    android:src="@drawable/no_member_icon" />
+
+                <TextView
+                    android:id="@+id/tv_mname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="充值会员，享受更多权限"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_invite_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_name_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="邀请码 ："
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_bg"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="84dp"
+                android:padding="5dp"
+                android:text="钱包"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <ImageView
+
+                android:id="@+id/iv_selector_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_bg"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/selector_line" />
+
+            <TextView
+                android:id="@+id/template"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_bg"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="55dp"
+                android:padding="5dp"
+                android:text="已使用的模版"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_selector_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_bg"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="48dp"
+                android:src="@drawable/selector_line"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/iv_no_tem"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_back"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp"
+                android:src="@drawable/no_template"
+                android:visibility="gone" />
+            <!--切换的布局-->
+            <RelativeLayout
+                android:id="@+id/rl_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv_bg"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/wallet_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/iv_wallet"
+                    android:text="我的钱包"
+                    android:textColor="#3f3f3f"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_wallet"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="23dp"
+                    android:text="￥"
+                    android:textColor="#4f4f4f"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_wallet"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_toRightOf="@id/tv_symbol"
+                    android:text="0.00"
+                    android:textColor="#4f4f4f"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/iv_look_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_look_list"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="23dp"
+                    android:layout_marginRight="22dp"
+                    android:src="@drawable/look_list" />
+
+                <TextView
+                    android:id="@+id/tv_look_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/fenge"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginRight="10dp"
+                    android:text="查看明细" />
+
+                <ImageView
+                    android:id="@+id/fenge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_money"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/line" />
+
+                <ImageView
+                    android:id="@+id/iv_power_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fenge"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/power_time" />
+
+                <TextView
+                    android:id="@+id/tv_power_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fenge"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/iv_power_time"
+                    android:text="权益有效期"
+                    android:textColor="#3f3f3f"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_power_time_dec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fenge"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toLeftOf="@+id/center_arrow1"
+                    android:text="与会员有效期一致"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/center_arrow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/fenge"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:id="@+id/fenge1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_power_time"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/line" />
+
+                <ImageView
+                    android:id="@+id/iv_power_int"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fenge1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/rights_dec" />
+
+                <TextView
+                    android:id="@+id/tv_rights_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fenge1"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/iv_power_time"
+                    android:text="权益介绍"
+                    android:textColor="#3f3f3f"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_right_dec"
+
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fenge1"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toLeftOf="@+id/center_arrow2"
+                    android:singleLine="true"
+                    android:text="黄金会员享用更多模版，不受限制"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/center_arrow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/fenge1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:id="@+id/fenge2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_rights_intro"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/line" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/rl_tem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_bg"
+                android:background="@color/white"
+                android:padding="2dp"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </com.wmcd.myb.view.MyScrollview>
+</RelativeLayout>

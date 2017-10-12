@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_01"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/backgroundgray"
+        android:gravity="center"
+        android:text="拍照"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <View style="@style/view_thick_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/backgroundgray"
+            android:gravity="center"
+            android:text="从手机相册选择"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <View style="@style/view_thick_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_03"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/backgroundgray"
+            android:gravity="center"
+            android:text="保存图片"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_thick_line"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:id="@+id/tv_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/backgroundgray"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <View style="@style/view_thick_line" />
+</LinearLayout>

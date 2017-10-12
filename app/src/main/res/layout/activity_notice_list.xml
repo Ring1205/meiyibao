@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f4f8">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/notice_back" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="消息中心"
+            android:textColor="#3f3f3f"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/text_color"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    <ImageView
+        android:background="#e4e4e4"
+        android:id="@+id/fenge"
+        android:layout_below="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fenge"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="6dp">
+
+        <RelativeLayout
+            android:id="@+id/sys_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/sys_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="6dp"
+                android:drawableLeft="@drawable/noticesystem"
+                android:gravity="center"
+                android:text="  系统通知"
+                android:textColor="#3f3f3f"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sys_count_tv"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="-80dp"
+                android:layout_toRightOf="@+id/sys_tv"
+                android:background="@drawable/noticebg"
+                android:gravity="center"
+                android:text="1"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:layout_alignParentTop="true" />
+
+            <View
+                android:id="@+id/sys_vw"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_alignLeft="@+id/sys_tv"
+                android:layout_alignRight="@+id/sys_tv"
+                android:layout_below="@+id/sys_tv"
+                android:background="#f4bc44"
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/assets_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/zc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="6dp"
+                android:drawableLeft="@drawable/noticeasets"
+                android:gravity="center"
+                android:text="  资产消息"
+                android:textColor="#3f3f3f"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/zc_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-80dp"
+                android:layout_toRightOf="@+id/zc_tv"
+                android:background="@drawable/noticebg"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/zc_vw"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_alignLeft="@+id/zc_tv"
+                android:layout_alignRight="@+id/zc_tv"
+                android:layout_below="@+id/zc_tv"
+                android:background="#becef7"
+                android:visibility="gone"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.wmcd.myb.wigdet.XListView
+        android:id="@+id/sys_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_ll"
+        android:background="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent" />
+
+    <com.wmcd.myb.wigdet.XListView
+        android:id="@+id/assets_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_ll"
+        android:background="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:visibility="gone" />
+
+</RelativeLayout>

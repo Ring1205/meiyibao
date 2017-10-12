@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/rl_click"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:clickable="false"
+        android:id="@+id/jinxuan"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/category_menu_bg_select"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="精选推荐"
+            android:textColor="@drawable/category_menu_selector"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:clickable="false"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fenge1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@id/jinxuan"
+        android:background="@drawable/fenge">
+
+    </ImageView>
+
+</RelativeLayout>

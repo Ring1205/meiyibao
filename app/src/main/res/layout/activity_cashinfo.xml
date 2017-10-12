@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f4f8">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_activity" />
+
+
+    <TextView
+        android:id="@+id/money_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/feedback_s"
+        android:gravity="center"
+        android:padding="26dip"
+        android:text="￥0"
+        android:textColor="#3f3f3f"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/money_tv"
+        android:layout_marginTop="0.5dp"
+        android:gravity="center"
+        android:padding="14dip"
+        android:text="提现说明"
+        android:textColor="#3f3f3f"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/msg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/info_tv"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:padding="26dip"
+        android:text="您的提现申请已提交到系统\n款项将在七个工作日以内转账到您的银行卡。"
+        android:textColor="#3f3f3f"
+        android:textSize="16dp" />
+</RelativeLayout>
+

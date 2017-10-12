@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f4f8">
+
+    <TextView
+        android:id="@+id/month_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本月" android:paddingLeft="14dp"
+        android:textColor="#3f3f3f" android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:layout_below="@+id/month_tv"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white">
+    <TextView
+        android:id="@+id/week_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天"
+        android:textColor="#9c9c9c"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/week_tv"
+        android:layout_marginTop="10dip"
+        android:text="03/06"
+        android:textColor="#9c9c9c"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/man_icon_iv"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="32dp"
+        android:src="@drawable/ssdk_oks_classic_kakaostory"
+        android:layout_alignBottom="@+id/time_tv"
+        android:layout_toEndOf="@+id/time_tv" />
+
+    <TextView
+        android:id="@+id/money_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/man_icon_iv"
+        android:text="+80.00"
+        android:textColor="#3f3f3f"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/money_tv"
+        android:layout_below="@+id/money_tv"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/man_icon_iv"
+        android:text="03/06"
+        android:textColor="#878787"
+        android:textSize="14dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f5f4f8"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/info_tv"/>
+</RelativeLayout>
+</RelativeLayout>

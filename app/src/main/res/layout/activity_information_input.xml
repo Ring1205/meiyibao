@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/meiyibao_back" />
+
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="25dp"
+        android:src="@drawable/login02" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="80dp"
+        android:layout_alignTop="@+id/iv_login"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="填写信息"
+            android:textColor="#251a42"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/et_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_01"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:hint="请输入昵称"
+            android:textColorHint="#c2c2c2"
+            android:textSize="14dp"
+            android:theme="@style/MyEditText" />
+
+        <View
+            android:id="@+id/view_01"
+            android:layout_width="224dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_01"
+            android:layout_marginTop="3dp"
+            android:background="#ccc" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_01"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="+86"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_phone"
+            android:layout_toRightOf="@+id/tv_phone"
+            android:background="@null"
+            android:hint="| 手机"
+            android:inputType="number"
+            android:textColor="#000"
+            android:textColorHint="#c2c2c2"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/view_02"
+            android:layout_width="224dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_phone"
+            android:layout_marginTop="3dp"
+            android:background="#ccc" />
+
+        <ImageView
+            android:id="@+id/iv_luru_01"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_below="@+id/view_02"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/luru_01" />
+
+        <LinearLayout
+            android:id="@+id/city_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view_03"
+            android:layout_toRightOf="@+id/iv_luru_01"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_province"
+                android:hint="请选择地址"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_03"
+            android:layout_width="224dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/iv_luru_01"
+            android:layout_marginTop="3dp"
+            android:background="#ccc" />
+
+        <ImageView
+            android:id="@+id/iv_luru_02"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_below="@+id/view_03"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/luru_02" />
+
+        <EditText
+            android:id="@+id/et_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_luru_02"
+            android:layout_toRightOf="@+id/iv_luru_02"
+            android:background="@null"
+            android:hint="填写店铺详情地址"
+            android:textColorHint="#c2c2c2"
+            android:textSize="14dp"
+            android:singleLine="true"
+            android:theme="@style/MyEditText" />
+
+        <View
+            android:id="@+id/view_04"
+            android:layout_width="224dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/iv_luru_02"
+            android:layout_marginTop="3dp"
+            android:background="#ccc" />
+
+        <ImageView
+            android:id="@+id/iv_luru_03"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_below="@+id/view_04"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/luru_03" />
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/et_04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_luru_03"
+            android:layout_toRightOf="@+id/iv_luru_03"
+            android:background="@null"
+            android:hint="填写店铺名"
+            android:textColorHint="#c2c2c2"
+            android:textSize="14dp"
+            android:theme="@style/MyEditText" />
+
+        <View
+            android:id="@+id/view_05"
+            android:layout_width="224dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/iv_luru_03"
+            android:layout_marginTop="3dp"
+            android:background="#ccc" />
+
+        <ImageView
+            android:id="@+id/iv_luru_04"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_below="@+id/view_05"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/luru_04" />
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/et_05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_luru_04"
+            android:layout_toRightOf="@+id/iv_luru_04"
+            android:background="@null"
+            android:hint="填写店铺行业"
+            android:textColorHint="#c2c2c2"
+            android:textSize="14dp"
+            android:theme="@style/MyEditText" />
+
+        <View
+            android:id="@+id/view_06"
+            android:layout_width="224dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/iv_luru_04"
+            android:layout_marginTop="3dp"
+            android:background="#ccc" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_luru"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/tv_05"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/luru"
+        android:text="录入"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="请填写会员信息，以便于我们更好的为您服务！"
+        android:textColor="#251a42"
+        android:textSize="12dp" />
+
+</RelativeLayout>

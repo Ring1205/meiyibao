@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/white"
+    android:padding="3dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_item"
+        android:layout_marginTop="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_vip"
+        android:src="@drawable/tem_vip"
+        android:visibility="gone"
+        android:layout_alignRight="@+id/iv_item"
+        android:layout_alignTop="@+id/iv_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--<TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_3a_14dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_below="@+id/iv_item"
+        android:layout_alignLeft="@+id/iv_item"
+        android:text="白色情人节"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/iv_login"
+        android:layout_alignLeft="@+id/iv_item"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_name"
+        android:src="@drawable/member_little_01"/>
+
+    <TextView
+        android:id="@+id/tv_nature"
+        android:layout_toRightOf="@+id/iv_login"
+        android:layout_marginTop="3dp"
+        android:layout_alignTop="@+id/iv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_8a_12dp"
+        android:text=" 会员使用"/>
+-->
+</RelativeLayout>
